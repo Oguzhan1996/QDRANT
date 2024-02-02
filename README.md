@@ -34,33 +34,38 @@ A minimalistic frontend that allows users to enter text queries and displays rel
 
 #### Installation
 
+# Text2ImageSearch
+
+## Installation
+
 Clone this repository to your desired location:
 
 ```bash
 git clone https://github.com/Oguzhan1996/Text2ImageSearch.git
 
-    Navigate to the project directory and install the required Python packages:
 
-bash
+Navigate to the project directory and install the required Python packages:
 
 cd Text2ImageSearch
 pip install -r requirements.txt
+
 
     Ensure Qdrant is running. If not, start your Qdrant instance as per the official documentation.
 
 Running the Application
 
-    Generate and Upload Image Embeddings:
+Generate and Upload Image Embeddings:
 
-bash
+python embed_images.py
+python upload_qdrant.py
+
 
 python embed_images.py
 python upload_qdrant.py
 
     Start the FastAPI server:
 
-bash
-
 uvicorn FAST_API:app --reload
+
 
 The server will be available at http://127.0.0.1:8000. Use endpoints like /search/?query=<your-query> to perform searches.
