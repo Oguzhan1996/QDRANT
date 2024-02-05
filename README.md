@@ -51,7 +51,7 @@ git clone https://github.com/Oguzhan1996/Text2Image-Search.git
 
 Navigate to the project directory and install the required Python packages:
 
-cd Text2ImageSearch
+cd Text2Image-Search
 pip install -r requirements.txt
 
 run Exploratory Data Analysis.ipynb to download the images
