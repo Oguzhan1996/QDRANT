@@ -4,6 +4,8 @@ from qdrant_client import QdrantClient
 from matplotlib import pyplot as plt
 import numpy as np
 import matplotlib.image as mpimg
+import os
+
 
 
 # Initialize the CLIP model and processor
